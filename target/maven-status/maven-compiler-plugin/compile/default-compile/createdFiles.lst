@@ -1,0 +1,8 @@
+com\springapi\player\controller\PlayerController.class
+com\springapi\player\config\WebXml.class
+com\springapi\player\service\PlayerServiceImpl.class
+com\springapi\player\config\SpringConfiguration.class
+com\springapi\player\service\PlayerService.class
+com\springapi\player\dao\PlayerDaoImpl.class
+com\springapi\player\model\Player.class
+com\springapi\player\dao\PlayerDao.class
