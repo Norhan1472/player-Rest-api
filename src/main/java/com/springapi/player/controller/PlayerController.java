@@ -1,9 +1,11 @@
 package com.springapi.player.controller;
 
+import java.nio.file.Path;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,6 +26,12 @@ public class PlayerController {
 	@GetMapping("/player")
 	public List<Player> getAllData() {
 		return playerService.getPlayers();
+	}
+	
+	@GetMapping("/getPlayer/{id}")
+	public Player getPlayerById(@PathVariable("id") long id) {
+		Player p = playerService.EditPlayer(id);
+		return p;
 	}
 
 }
